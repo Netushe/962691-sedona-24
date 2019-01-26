@@ -1,12 +1,89 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
 
-  </body>
+<body>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <ul>
+        <li>
+          <a href="info.html">Информация</a>
+        </li>
+        <li>
+          <a href="media.html">Фото и видео</a>
+        </li>
+        <li>
+          <a href="map.html">Карта штата</a>
+        </li>
+        <li>
+          <a href="hotels.html">Гостиницы</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="small-header-logo" href="main.html">
+      <img src="http://placehold.it/50x40" alt="Логотип города Sedona">
+    </a>
+    <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
+    <a class="main-header-logo" href="main.html">
+      <img src="http://placehold.it/150x100" alt="Логотип города Sedona">
+    </a>
+  </header>
+
+  <main class="container">
+    <h1 class="visually-hidden">Седона</h1>
+    <section class="main-promo">
+      <h2 class="visually-hidden">Преимущества Седоны</h2>
+      <header class="main-promo-header">
+        <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      </header>
+    </section>
+
+    <section class="booking">
+        <h2 class="visually-hidden">Бронирование отелей Седоны</h2>
+      <header class="booking-header">
+        <h2>Заинтересовались?</h2>
+        <p>Укажите предполагаемые даты поездки,<br>
+          и мы покажем вам лучшие предложения гостиниц в Седоне
+        </p>
+      </header>
+      <a href="form.html" class="button button-form">Поиск гостиницы в Седоне</a>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+
+    <div class="hashtag">
+      <span>#VISITSEDONA</span>
+    </div>
+
+    <div class="footer-social">
+      <ul>
+        <li>
+          <a class="social-button" href="#">Twitter</a>
+        </li>
+        <li>
+          <a class="social-button" href="#">Фейсбук</a>
+        </li>
+        <li>
+          <a class="social-button" href="#">YouTube</a>
+        </li>
+      </ul>
+    </div>
+
+    <p class="footer-developer">
+      <a href="https://htmlacademy.ru">
+        <span class="developer-text">Website by</span>
+        <img src="http://placehold.it/30x30" alt="htmlacademy">
+        <span class="developer-text-text">html academy</span>
+      </a>
+    </p>
+  </footer>
+
+</body>
+
 </html>
