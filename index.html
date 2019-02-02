@@ -3,11 +3,13 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Седона</title>
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="main-header">
+      <img src="img/main/logo-sedona.svg" width="138" height="70" alt="Логотип города Sedona">
     <nav class="main-navigation">
       <ul>
         <li>
@@ -24,17 +26,31 @@
         </li>
       </ul>
     </nav>
-    <img src="http://placehold.it/50x40" alt="Логотип города Sedona">
     <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
   </header>
 
-  <main class="container">
+  <main class="main-index">
     <h1 class="visually-hidden">Седона</h1>
+    <div class="welcome">
+      <div class="welcome-index"><img src="img/main/background_photo_1200x800.jpg" width="1200" height="800" alt=""></div>
+      <div class="welcome-mask"></div>
+    </div>
     <section class="main-promo">
       <h2 class="visually-hidden">Преимущества Седоны</h2>
       <div class="main-promo">
         <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      </div>
+    </section>
+
+    <section class="promo">
+      <div class="promo-feature-1"> 
+        <h3>Настоящий городок</h3>
+          <img src="img/main/promo_800x256.jpg" width="800" height="256" alt="Настоящий городок">
+      </div>
+      <div class="promo-feature-2"> 
+        <h3>Мост дьявола</h3>
+          <img src="img/main/promo-2_800x256.jpg" width="800" height="256" alt="Мост дьявола">
       </div>
     </section>
 
@@ -52,9 +68,13 @@
 
   <footer class="main-footer">
 
-    <div class="hashtag">
-      <span>#VISITSEDONA</span>
+    <div class="footer-map"> 
+        <img class="map" src="img/main/map_1200x594.jpg" width="1200" height="594" alt="Карта окрестностей Седоны">
     </div>
+
+    <p class="hashtag">
+      <span>#VISITSEDONA</span>
+    </p>
 
     <div class="footer-social">
       <ul>
@@ -73,7 +93,7 @@
     <p class="footer-developer">
       <a href="https://htmlacademy.ru">
         <span class="developer-text">Website by</span>
-        <img src="http://placehold.it/30x30" alt="htmlacademy">
+        <img src="img/icon/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy">
         <span class="developer-text-text">html academy</span>
       </a>
     </p>
