@@ -30,8 +30,39 @@
   </header>
 
   <main class="container">
+
+    <h1 class="visually-hidden">Поиск отелей Седона</h1>
+
+    <section class="filter">
+      <h2 class="visually-hidden">Фильтр отелей</h2>
+      <form class="hotel_filter" action="https://echo.htmlacademy.ru" method="GET">
+        <fieldset class="filter_checkbox">
+          <legend>Инфраструктура</legend>
+          <ul>
+              <li><label><input class="form_checkbox visually_hidden" type="checkbox" name="swimming_pool" checked>Бассейн</label></li>
+              <li><label><input class="form_checkbox visually_hidden" type="checkbox" name="parking">Парковка</label></li>
+              <li><label><input class="form_checkbox visually_hidden" type="checkbox" name="wi_fi">Wi-Fi</label></li>
+            </ul>
+        </fieldset>
+        <fieldset class="filter_checkbox">
+          <legend>Тип жилья:</legend>
+          <ul>
+              <li><label><input class="form_checkbox visually_hidden" type="checkbox" name="hotel" checked>Гостиница</label></li>
+              <li><label><input class="form_checkbox visually_hidden" type="checkbox" name="motel" checked>Мотель</label></li>
+              <li><label><input class="form_checkbox visually_hidden" type="checkbox" name="apartments" checked>Апартаменты</label></li>
+            </ul>
+        </fieldset>
+        <fieldset class="price">
+          <legend>Стоимость в сутки (Р)</legend>
+          <label for="min_price_range">От<input class="price_box" type="text" name="min_price" id="min_price_range" value="0"></label>
+          <label for="max_price_range">До<input class="price_box" type="text" name="max_price" id="max_price_range" value="3000"></label>
+        </fieldset>
+        <button class="button_show" type="submit">Показать</button>
+      </form>
+    </section>
+
     <section class="hotel-items">
-      <h1 class="visually-hidden">Sedona hotels</h1>
+      <h2 class="visually-hidden">Результаты поиска</h2>
       <!-- возможно перечень отелей сделать списком вместо div?-->
       <article class="hotel-item">
         <div class="hotel-info">
