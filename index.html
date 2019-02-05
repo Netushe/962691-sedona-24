@@ -63,6 +63,31 @@
         </p>
       </div>
       <a href="form.html" class="button button-form">Поиск гостиницы в Седоне</a>
+      <form class="hotel-find-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="find_hotels_arrive">
+          <label for="arrival_date">Дата заезда:</label>
+          <input class="date_input" type="text" name="arrival_date" id="arrival_date" placeholder="24 апреля 2017">
+          <button class="calendar_arrival_date" type="button" name="calendar_arrival_date">Календарь</button>
+        </p>
+        <p class="find_hotels_departure">
+          <label for="departure_date">Дата выезда:</label>
+          <input class="date_input" type="text" name="departure_date" id="departure_date" placeholder="4 июля 2017">
+          <button class="calendar_departure_date" type="button" name="calendar_departure_date">Календарь</button>
+        </p>
+        <p class="find_hotels_adults">
+          <label for="adults_count">Взрослые:</label>
+          <button class="form_button minus_button" type="button" name="adults_minus">-</button>
+          <input class="count" type="text" name="adults" id="adults_count" placeholder="2">
+          <button class="form_button plus_button" type="button" name="adults_plus">+</button>
+        </p>
+        <p class="find_hotels_children">
+          <label for="children_count">Дети:</label>
+          <button class="form_button minus_button" type="button" name="children_minus">-</button>
+          <input class="count" type="text" name="children" id="children_count" placeholder="0">
+          <button class="form_button plus_button" type="button" name="children_plus">+</button>
+        </p>
+        <button class="find_button" type="submit">Найти</button>
+      </form>
     </section>
   </main>
 
@@ -94,7 +119,6 @@
       <a href="https://htmlacademy.ru">
         <span class="developer-text">Website by</span>
         <img src="img/icon/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy">
-        <span class="developer-text-text">html academy</span>
       </a>
     </p>
   </footer>
