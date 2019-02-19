@@ -113,6 +113,14 @@ a {
 /* ОСНОВНОЕ СОДЕРЖАНИЕ INDEX_MAIN*/
 /* Блок промо */
 
+.main_header{
+  width: 1200px;
+  height: 800px;
+  background-image: url("../img/main/background_photo_1200x800.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .main_promo {
   color: #000000;
   background-color: #ffffff;
@@ -130,19 +138,25 @@ a {
 }
 
 .promo_feature {
-  width: 400px;
+  width: 100%;
   height: 256px;
   background-color: #81b3d2;
   color: #ffffff;
   text-align: center;
-  }
+}
 
-.feature_image{
+.feature_image {
   background-image: url("../img/main/promo_800x256.jpg");
   background-repeat: no-repeat;
-  background-position-x: right;
-  
- }
+  background-position: right;
+}
+
+.feature_image_2{
+  background-image: url("../img/main/promo-2_800x256.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
 
 .add_features_list li {
   height: 256px;
@@ -151,17 +165,19 @@ a {
 .promo_feature h3,
 .add_features_list h3 {
   margin: 0;
-  padding: 30px 140px;
-
+  padding: 30px 50px;
+  width: 300px;
   font-size: 21px;
   font-weight: 700;
 }
 
 .promo_feature p,
 .add_features_list p {
+  width: 300px;
   margin: 0;
   padding-left: 50px;
   padding-right: 50px;
+  text-align: center;
 
 }
 
@@ -595,5 +611,3 @@ a {
   display: flex;
   justify-content: space-between;
 }
-
-
