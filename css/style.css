@@ -135,7 +135,14 @@ a {
   background-color: #81b3d2;
   color: #ffffff;
   text-align: center;
-}
+  }
+
+.feature_image{
+  background-image: url("../img/main/promo_800x256.jpg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  
+ }
 
 .add_features_list li {
   height: 256px;
