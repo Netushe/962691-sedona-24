@@ -10,10 +10,10 @@
 </head>
 
 <body>
-  
+    <div class="main_container">
   <header class="main_header">
     <a class="small_header_logo" href="index.html">
-      <img src="img/main/logo-sedona.svg" width="138" height="70" alt="Логотип города Sedona">
+      <img class="logo" src="img/main/logo-sedona.svg" width="138" height="70" alt="Логотип города Седона">
     </a>
     <nav class="main_navigation">
       <ul class="main_list">
@@ -40,55 +40,69 @@
     <section class="filter">
       <h2 class="visually_hidden">Фильтр отелей</h2>
       <form class="hotel_filter" action="https://echo.htmlacademy.ru" method="GET">
-        <fieldset class="filter_checkbox">
-          <legend>Инфраструктура</legend>
-          <ul>
-            <li><label><input class="form_checkbox visually_hidden" type="checkbox" name="swimming_pool" checked>Бассейн</label></li>
-            <li><label><input class="form_checkbox visually_hidden" type="checkbox" name="parking">Парковка</label></li>
-            <li><label><input class="form_checkbox visually_hidden" type="checkbox" name="wi_fi">Wi-Fi</label></li>
-          </ul>
-        </fieldset>
-        <fieldset class="filter_checkbox">
-          <legend>Тип жилья:</legend>
-          <ul>
-            <li><label><input class="form_checkbox visually_hidden" type="checkbox" name="hotel" checked>Гостиница</label></li>
-            <li><label><input class="form_checkbox visually_hidden" type="checkbox" name="motel" checked>Мотель</label></li>
-            <li><label><input class="form_checkbox visually_hidden" type="checkbox" name="apartments" checked>Апартаменты</label></li>
-          </ul>
-        </fieldset>
+        <div class="checkbox_container">
+            <fieldset class="filter_checkbox">
+                <legend>Инфраструктура</legend>
+                <ul>
+                  <li><label><input class="form_checkbox" type="checkbox" name="swimming_pool" checked>Бассейн</label></li>
+                  <li><label><input class="form_checkbox" type="checkbox" name="parking">Парковка</label></li>
+                  <li><label><input class="form_checkbox" type="checkbox" name="wi_fi">Wi-Fi</label></li>
+                </ul>
+              </fieldset>
+              <fieldset class="filter_checkbox">
+                <legend>Тип жилья:</legend>
+                <ul>
+                  <li><label><input class="form_checkbox" type="checkbox" name="hotel" checked>Гостиница</label></li>
+                  <li><label><input class="form_checkbox" type="checkbox" name="motel" checked>Мотель</label></li>
+                  <li><label><input class="form_checkbox" type="checkbox" name="apartments" checked>Апартаменты</label></li>
+                </ul>
+              </fieldset>
+        </div>
+        
         <fieldset class="price">
           <legend>Стоимость в сутки (Р)</legend>
-          <label for="min_price_range">От<input class="price_box" type="text" name="min_price" id="min_price_range"
-              value="0"></label>
-          <label for="max_price_range">До<input class="price_box" type="text" name="max_price" id="max_price_range"
-              value="3000"></label>
+          <div class="filter_price_container">
+            <label for="min_price_range" aria-label="Фильтр по цене в сутки">От<input class="price_box" type="text"
+                name="min_price" id="min_price_range" value="0">
+            </label>
+            <label for="max_price_range" aria-label="Фильтр по цене в сутки">До<input class="price_box" type="text"
+                name="max_price" id="max_price_range" value="3000">
+            </label>
+          </div>
+          <div class="slider_container">
+            <div class="slider_scale"></div>
+            <span class="slider_button_min"></span>
+            <span class="slider_button_max"></span>
+          </div>
         </fieldset>
         <button class="show_button" type="submit">Показать</button>
       </form>
     </section>
 
     <section class="filter_result">
-        <h2 class="visually_hidden">Результаты поиска</h2>
-        <div class="result">
-          <span class="find_result">Найдено: 3</span>
-          <span class="sorting">Сортировка:</span>
-        </div>
-        <div class="result_sorting">
-          <ul class="sort_by_type">
-            <li><a class="active" href="hotels/by-price.html">По цене</a></li>
-            <li><a href="hotels/by-type.html">По типу</a></li>
-            <li><a href="hotels/by-rating.html">По рейтингу</a></li>
-          </ul>
-          <ul class="sort_by_direction">
-            <li><a href="" class="arrow_button_up" aria-label="Сортировка по возрастанию"><span class="visually_hidden">По возрастанию</span></a></li>
-            <li><a href="" class="arrow_button_down active" aria-label="Сортировка по убыванию"><span class="visually_hidden">По убыванию</span></a></li>
-          </ul>
-        </div>
-      </section>
+      <h2 class="visually_hidden">Результаты поиска</h2>
+      <div class="result">
+        <span class="find_result">Найдено: 3</span>
+        <span class="sorting">Сортировка:</span>
+      </div>
+      <div class="result_sorting">
+        <ul class="sort_by_type">
+          <li><a class="active" href="hotels/by-price.html">По цене</a></li>
+          <li><a href="hotels/by-type.html">По типу</a></li>
+          <li><a href="hotels/by-rating.html">По рейтингу</a></li>
+        </ul>
+        <ul class="sort_by_direction">
+          <li><a href="" class="arrow_button_up" aria-label="Сортировка по возрастанию"><span class="visually_hidden">По
+                возрастанию</span></a></li>
+          <li><a href="" class="arrow_button_down active" aria-label="Сортировка по убыванию"><span class="visually_hidden">По
+                убыванию</span></a></li>
+        </ul>
+      </div>
+    </section>
 
     <section class="hotel_items">
       <h2 class="visually_hidden">Результаты поиска</h2>
-      
+
       <article class="hotel_item">
         <div class="hotel_info">
           <a href="#">
@@ -97,7 +111,7 @@
               <img src="img/content/amara_135x90.jpg" width="135" height="90" alt="Amara resort & spa">
             </p>
           </a>
-          
+
           <div class="left_side_info">
             <p class="hotel_type_price">
               <span>Гостиница</span>
@@ -110,7 +124,7 @@
           </div>
           <div class="right_side_info">
             <p class="hotel_value">
-              <span class="hotel_stars">4</span>
+              <span class="hotel_stars" aria-label="Количество звезд">4</span>
               <span class="hotel_rating">Рейтинг: 8,5</span>
             </p>
           </div>
@@ -124,7 +138,7 @@
               <img src="img/content/desert_135x90.jpg" width="135" height="90" alt="Desert Quail Inn">
             </p>
           </a>
-         
+
           <div class="left_side_info">
             <p class="hotel_type_price">
               <span>Мотель</span>
@@ -137,7 +151,7 @@
           </div>
           <div class="right_side_info">
             <p class="hotel_value">
-              <span class="hotel_stars">3</span>
+              <span class="hotel_stars" aria-label="Количество звезд">3</span>
               <span class="hotel_rating">Рейтинг: 8,9</span>
             </p>
           </div>
@@ -151,7 +165,7 @@
               <img src="img/content/villas_135x90.jpg" width="135" height="90" alt="Villas at Poco Diablo">
             </p>
           </a>
-         
+
           <div class="left_side_info">
             <p class="hotel_type_price">
               <span>Апартаменты</span>
@@ -164,7 +178,7 @@
           </div>
           <div class="right_side_info">
             <p class="hotel_value">
-              <span class="hotel_stars">2</span>
+              <span class="hotel_stars" aria-label="Количество звезд">2</span>
               <span class="hotel_rating">Рейтинг: 9,2</span>
             </p>
           </div>
@@ -179,6 +193,7 @@
     </p>
 
     <div class="footer_social">
+      <h2 class="visually_hidden">Седона в социальных сетях</h2>
       <ul class="footer_social_list">
         <li>
           <a class="social_button_twiter" href="https://twitter.com/">Twitter</a>
@@ -193,13 +208,13 @@
     </div>
 
     <p class="footer_developer">
-      <a href="https://htmlacademy.ru">
+      <a href="https://htmlacademy.ru" area-label="HTML Academy">
         <span class="developer_text">Website by</span>
-        <img src="img/icon/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy">
+        <img src="img/icon/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
       </a>
     </p>
   </footer>
-
+    </div>
 </body>
 
 </html>
